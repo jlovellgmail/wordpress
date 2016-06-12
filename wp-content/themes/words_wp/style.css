@@ -44,6 +44,25 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Galleries
 --------------------------------------------------------------*/
 
+
+.JL-class1 {
+	background-color: red;
+	display: inline-block;
+}
+.JL-class2 {
+	background-color: yellow;
+	display: inline-block;
+}
+#secondary {
+	display: none;
+}
+.site-footer {
+	display: none;
+}
+#masthead {
+	display: none;
+}
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
