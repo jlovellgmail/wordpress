@@ -48,19 +48,24 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .JL-class1 {
 	background-color: red;
 	display: inline-block;
+	padding: 10px;
 }
 .JL-class2 {
 	background-color: yellow;
 	display: inline-block;
+	padding: 10px;
 }
-#secondary {
+.page-id-27 #secondary {
 	display: none;
 }
-.site-footer {
+.page-id-27 .site-footer {
 	display: none;
 }
-#masthead {
+.page-id-27 #masthead {
 	display: none;
+}
+.line-item {
+	display: block;
 }
 
 /*--------------------------------------------------------------
