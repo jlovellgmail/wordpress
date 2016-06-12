@@ -7,6 +7,32 @@
  * @package words_wp
  */
 
+
+
+// Our custom post type function
+function create_posttype() {
+
+	register_post_type( 
+		'movies',
+		// CPT Options
+		array(
+			'labels' => array(
+				'name' => __( 'Movies' ),
+				'singular_name' => __( 'Movie' )
+			),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'movies'),
+			'supports' => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+		)
+	);
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_posttype' );
+
+
+
+
 if ( ! function_exists( 'words_wp_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
